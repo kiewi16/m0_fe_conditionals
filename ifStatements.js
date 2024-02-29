@@ -10,9 +10,29 @@
 
 var numQuarters = 0;
 
-console.log("I have enough money for a gumball");
-console.log("I don't have enough money for a gumball");
+// console.log("I have enough money for a gumball");
+//console.log("I don't have enough money for a gumball");
 
+// Example 1 - I have $0
+if (numQuarters <= 0) {  
+    console.log("I don't have enough money for a gumball");
+} else if (numQuarters >= 0) {
+    console.log("I have enough money for a gumball");
+}
+// Example 2 - I have $1
+numQuarters = 1;
+if (numQuarters <= 0) {  
+    console.log("I don't have enough money for a gumball");
+} else if (numQuarters >= 0) {
+    console.log("I have enough money for a gumball");
+}
+// Example 3 - I have $0.50
+numQuarters = 0.50
+if (numQuarters <= 0) {  
+    console.log("I don't have enough money for a gumball");
+} else if (numQuarters >= 0) {
+    console.log("I have enough money for a gumball");
+}
 
 // CHALLENGE 2
 // Using the variables defined below, write code that will tell you if you have the ingredients to make a pizza. 
@@ -29,3 +49,55 @@ console.log("I don't have enough money for a gumball");
 var cupsOfFlour = 1;
 var hasSauce = true;
 
+// If cupsOfFlour = 1 and hasSauce = true, print "I cannot make pizza"
+if (cupsOfFlour < 2 && hasSauce === false) {
+    console.log("I cannot make pizza");
+} else if (cupsOfFlour < 2 && hasSauce === true) {
+    console.log("I cannot make pizza");
+} else if (cupsOfFlour > 2 && hasSauce === false) {
+    console.log("I cannot make pizza");
+} else if (cupsOfFlour >=2 && hasSauce === true) {
+    console.log("I can make pizza!");
+}
+
+// If cupsOfFlour = 5 and hasSauce = false, print "I cannot make pizza"
+cupsOfFlour = 5
+hasSauce = false
+
+if (cupsOfFlour < 2 && hasSauce === false) {
+    console.log("I cannot make pizza");
+} else if (cupsOfFlour < 2 && hasSauce === true) {
+    console.log("I cannot make pizza");
+} else if (cupsOfFlour > 2 && hasSauce === false) {
+    console.log("I cannot make pizza");
+} else if (cupsOfFlour >=2 && hasSauce === true) {
+    console.log("I can make pizza!");
+}
+
+// If cupsOfFlour = 2 and hasSauce = true, print "I can make pizza"
+cupsOfFlour = 2
+hasSauce = true
+
+if (cupsOfFlour < 2 && hasSauce === false) {
+    console.log("I cannot make pizza");
+} else if (cupsOfFlour < 2 && hasSauce === true) {
+    console.log("I cannot make pizza");
+} else if (cupsOfFlour > 2 && hasSauce === false) {
+    console.log("I cannot make pizza");
+} else if (cupsOfFlour >=2 && hasSauce === true) {
+    console.log("I can make pizza!");
+}
+
+// If cupsOfFlour = 3 and hasSauce = true, print "I can make pizza"
+cupsOfFlour = 3
+hasSauce = true
+
+if (cupsOfFlour < 2 && hasSauce === false) {
+    console.log("I cannot make pizza");
+} else if (cupsOfFlour < 2 && hasSauce === true) {
+    console.log("I cannot make pizza");
+} else if (cupsOfFlour > 2 && hasSauce === false) {
+    console.log("I cannot make pizza");
+} else if (cupsOfFlour >=2 && hasSauce === true) {
+    console.log("I can make pizza!");
+}
