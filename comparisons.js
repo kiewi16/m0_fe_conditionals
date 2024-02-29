@@ -17,14 +17,14 @@ console.log("Is numberTeachers greater than numberStudents?", numberTeachers > n
 // this should log: "Is numberTeachers greater than numberStudents?" false
 
 // YOU DO: log the result of the comparison: is numberTeachers strictly equal to stringTeachers?
-// this should log: false
-
-// YOU DO: log the result of the comparison: is numberTeachers not equal to numberStudents?
-// this should log: true
-
+// this should log: "Is numberTeachers strictly equal to stringTeachers?" false
+console.log("Is numberTeachers strictly equal to stringTeachers?", numberTeachers === stringTeachers);
+// YOU DO: log the result of the comparison: is numberTeachers not equal to numberStudents"
+// this should log: "Is numberTeachers not equal to numberStudents?" true
+console.log("Is numberTeachers not equal to numberStudents?", numberTeachers !== numberStudents);
 // YOU DO: log the result of the comparison: is numberStudents greater than or equal to 21?
-// this should log: false
-
+// this should log: "Is numberStudents greater than or equal to 21?" false
+console.log("Is numberStudents greater than or equal to 21?", numberStudents >= 21)
 
 // #-------------------
 // PART 2: Articulating what you are doing
@@ -34,14 +34,16 @@ console.log("Is numberTeachers greater than numberStudents?", numberTeachers > n
 
 var friends = 6;
 var siblings = 2;
-console.log(friends > siblings);
+console.log("Is friends greater than siblings?", friends > siblings);
 // YOU DO: Explain.
-
+// log the result of the comparison: is friends greater than siblings? 
+// this should log: true
 var attendees = 9;
 var meals = 8;
-console.log(attendees !== meals);
+console.log("Is attendees not strictly equal to meals?", attendees !== meals);
 // YOU DO: Explain.
-
+// log the result of the comparison: is attendees not strictly equal to meals?
+// this should log: true
 
 // #-------------------
 // PART 3: Logical Operators
@@ -52,10 +54,11 @@ var finishedHomework = false;
 
 // EXAMPLE:
 // Determine if the user is hungry and has completed their homework
-console.log(isHungry && finishedHomework);
+console.log("Is the user hungry and has completed their homework?", isHungry && finishedHomework);
+// this should log: false
 // Determine if the user is hungry or has completed their homework
-console.log(isHungry || finishedHomework);
-
+console.log("Is the user hungry or has completed their homework", isHungry || finishedHomework);
+// this should log: true
 var lovesToPlay = true;
 var lovesDogPark = false;
 var lovesTreats = true;
@@ -63,10 +66,11 @@ var age = 1;
 
 // YOU DO:
 // Determine if the dog loves to play and loves treats
-
+console.log("Does the dog love to play and love treats?", lovesToPlay && lovesTreats);
 // YOU DO:
 // Determine if the dog loves to play or loves the dog park
-
+console.log("Does the dog love to play or love the dog park?", lovesToPlay || lovesDogPark);
 // YOU DO:
 // Determine if the dog loves to play and is a puppy
 // HINT: Use the age variable and assume that a puppy is less than 2 years old
+console.log("Does the dog love to play and is a puppy?", lovesToPlay && age < 2)
