@@ -10,27 +10,24 @@
 
 var numQuarters = 0;
 
-// console.log("I have enough money for a gumball");
-//console.log("I don't have enough money for a gumball");
-
-// Example 1 - I have $0
-if (numQuarters <= 0) {  
+// Example 1 - I have 0 quarters
+if (numQuarters < 2) {  
     console.log("I don't have enough money for a gumball");
-} else if (numQuarters >= 0) {
+} else {
     console.log("I have enough money for a gumball");
 }
-// Example 2 - I have $1
-numQuarters = 1;
-if (numQuarters <= 0) {  
+// Example 2 - I have 4 quarters
+numQuarters = 4;
+if (numQuarters < 2) {  
     console.log("I don't have enough money for a gumball");
-} else if (numQuarters >= 0) {
+} else {
     console.log("I have enough money for a gumball");
 }
-// Example 3 - I have $0.50
-numQuarters = 0.50
-if (numQuarters <= 0) {  
+// Example 3 - I have 2 quarters
+numQuarters = 2
+if (numQuarters < 2) {  
     console.log("I don't have enough money for a gumball");
-} else if (numQuarters >= 0) {
+} else {
     console.log("I have enough money for a gumball");
 }
 
